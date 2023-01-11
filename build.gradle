@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'fr.dracolenoob'
+version '1.0'
+
+repositories {
+    mavenCentral()
+
+    maven{
+        name 'internal'
+        url ''
+    }
+}
+
+dependencies{
+    implementation 'com.mysql:mysql-connector-j:8.0.31'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'net.dv8tion:JDA:5.0.0-alpha.21'
+}
